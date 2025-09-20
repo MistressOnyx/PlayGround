@@ -34,3 +34,128 @@ li a {
     text-decoration: none;
     color: black;
 }
+
+/*Hero Section*/
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-section h1 {
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+.hero-section button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff5733;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section a {
+    color: white;
+    text-decoration: none;
+}
+
+/*About Section*/
+
+.about {
+    display: flex;
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 24px;
+    line-height: 1.6;
+
+}
+
+.about-image {
+    width: 50%;
+}
+
+.about-image img {
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/*Product Section*/
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 20px;
+    padding: 50px 20px;
+
+}
+
+.item {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    background-color: lightsalmon;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.item img {
+    width: 100%;
+}
+
+.item button.buy-now {
+    padding: 10px 20px;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(71, 181, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
